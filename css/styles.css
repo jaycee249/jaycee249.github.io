@@ -14,18 +14,35 @@ h1,h2,h3,h4,h5,h6 {
 
 /*  nav bar styles */
 .navbar {
-  /* position: fixed; */
+  position: fixed;
   background-color: #ffffff;
   height: 70px;
   width: 100%;
   border: none;
-  margin-bottom: 0px;
+  /* margin-bottom: 0px; */
 }
+
 .nav>li>a {
   margin-top: 8px;
   font-family: 'handlee', sans-serif;
   font-size: 16px;
   color: #2B2B2B;
+}
+li {
+  transition: background-color 0.5s ease;
+  width: 75px;
+  height: 70px;
+  background-color: transparent;
+  -webkit-transition: width 2s; /* Safari */
+  transition: width 2s;
+}
+li:hover {
+  background: #fceabb;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #f8b500, #fceabb);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #f8b500, #fceabb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  width: 150px;
 }
 .navbar-brand {
   margin-top: 8px;
@@ -82,7 +99,7 @@ h1,h2,h3,h4,h5,h6 {
   margin-right: 4vh;
 }
 /*  Portfolio Section*/
-.portfolio-section {
+.contact-section {
   background-image: url('../img/brick.jpg');
   background-attachment: fixed;
   background-size: cover;
@@ -96,6 +113,34 @@ h1,h2,h3,h4,h5,h6 {
   flex-direction: row;
   justify-content: space-around;
 }
+/*  contact section */
+.contact-section {
+  display: flex;
+  align-items: center;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-box {
+  height: 300px;
+  width: 300px;
+  background-color: rgba(35,36,35, .5);
+  color: #E0AF2E;
+  text-shadow: 1px 1px 1px #000000;
+  font-family: handlee;
+  font-size: 20px;
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+}
+button, input, select, textarea {
+  color: black;
+}
+
+
 /* footer section */
 .footer-section {
   background: #232526;  /* fallback for old browsers */
@@ -108,9 +153,13 @@ h1,h2,h3,h4,h5,h6 {
   border: 1px solid black;
   color: #ffffff;
 }
-.redglow {
-  color: #B1201B;
-  text-shadow: 0 0 3px #black;
+.social-media,a{
+  color: #ffffff;
+}
+a:hover {
+  color: #E0AF2E;
+}
+
 }
 /* Small Screens */
 @media only screen and (min-width : 768px) {
