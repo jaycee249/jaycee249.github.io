@@ -112,6 +112,27 @@ li:hover {
   flex-direction: row;
   justify-content: space-around;
 }
+/* project section */
+.project-section {
+  position: relative;
+  background-image: url('../img/landscape.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  /* display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around; */
+}
+
+.thumbnail,h3 {
+  height: 100px;
+  width: 175px;
+  margin: 0 auto;
+  color: #ffffff;
+}
 /*  contact section */
 .contact-section {
   display: flex;
